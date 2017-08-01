@@ -51,6 +51,9 @@
     <Reference Include="CBOR, Version=2.5.2.0, Culture=neutral, PublicKeyToken=9cd62db60ea5554c, processorArchitecture=MSIL">
       <HintPath>..\packages\PeterO.Cbor.2.5.2\lib\portable-net45+dnxcore50+netcore45+win+wpa81+wp80\CBOR.dll</HintPath>
     </Reference>
+    <Reference Include="CoAP, Version=1.1.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.AugustCellars.CoAP.1.1.6\lib\portable-net45+dnxcore50+netcore45+win+wpa81+wp80\CoAP.dll</HintPath>
+    </Reference>
     <Reference Include="COSE, Version=1.0.4.0, Culture=neutral, PublicKeyToken=feba232d7e8953ed, processorArchitecture=MSIL">
       <HintPath>..\packages\Com.AugustCellars.COSE.1.0.5.2\lib\portable-net45+dnxcore50+netcore45+win+wpa81+wp8\COSE.dll</HintPath>
     </Reference>
@@ -88,12 +91,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\CoAP-CSharp\CoAP.NET\CoAP.NET45.csproj">
-      <Project>{45db1e45-4831-4e4a-bb1e-ae92eea182e3}</Project>
-      <Name>CoAP.NET45</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />

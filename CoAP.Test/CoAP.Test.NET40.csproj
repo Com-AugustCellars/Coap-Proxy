@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -21,7 +21,7 @@
     <Optimize>false</Optimize>
     <IntermediateOutputPath>obj\Debug\NET40</IntermediateOutputPath>
     <OutputPath>bin\Debug\NET40\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;COAPALL</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -48,10 +48,10 @@
       <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
     <Reference Include="COSE, Version=1.0.4.0, Culture=neutral, PublicKeyToken=feba232d7e8953ed">
-      <HintPath>..\packages\Com.AugustCellars.COSE.1.0.5.2\lib\portable-net40+sl5+win+wpa81+wp8\COSE.dll</HintPath>
+      <HintPath>..\packages\Com.AugustCellars.COSE.1.0.5.2\lib\portable-net40+sl5+win+wpa81+wp8\COSE.dll</HintPath>
     </Reference>
     <Reference Include="CBOR, Version=2.5.2.0, Culture=neutral, PublicKeyToken=9cd62db60ea5554c, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\PeterO.Cbor.2.5.2\lib\portable-net40+sl50+win+wpa81+wp80\CBOR.dll</HintPath>
+      <HintPath>..\..\packages\PeterO.Cbor.2.5.2\lib\portable-net40+sl50+win+wpa81+wp80\CBOR.dll</HintPath>
     </Reference>
     <Reference Include="Numbers, Version=0.4.0.0, Culture=neutral, PublicKeyToken=9cd62db60ea5554c, processorArchitecture=MSIL">
       <HintPath>..\packages\PeterO.Numbers.0.4.0\lib\portable-net40+sl5+win+wpa81+wp80\Numbers.dll</HintPath>
@@ -67,36 +67,10 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BlockOptionTest.cs" />
-    <Compile Include="BlockwiseTransferTest.cs" />
-    <Compile Include="Channel\IPAddressTest.cs" />
-    <Compile Include="CoapClientTest.cs" />
-    <Compile Include="Codec\DatagramReadWriteTest.cs" />
-    <Compile Include="Codec\MessageTest.cs" />
-    <Compile Include="DTLS\DTLSClientEndPoint.cs" />
-    <Compile Include="DTLS\DTLSResourceTest.cs" />
-    <Compile Include="MemoryLeakingMapTest.cs" />
-    <Compile Include="MessageTypeTest.cs" />
-    <Compile Include="OptionTest.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RandomAccessBlockTest.cs" />
-    <Compile Include="ResourceAttributesTest.cs" />
-    <Compile Include="ResourceTest.cs" />
-    <Compile Include="ResourceTreeTest.cs" />
-    <Compile Include="StartStopTest.cs" />
+    <Compile Include="Test_HttpTranslator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\CoAP.Example\CoAP.Client\CoAP.Client.NET40.csproj">
-      <Project>{30223ff5-4dcb-45b8-9b06-61eb9fbf9fa8}</Project>
-      <Name>CoAP.Client.NET40</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CoAP.NET\CoAP.NET40.csproj">
-      <Project>{45db1e45-4831-4e4a-bb1e-ae92eea182e3}</Project>
-      <Name>CoAP.NET40</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

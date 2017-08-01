@@ -65,10 +65,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CoAP-CSharp\CoAP.NET\CoAP.NET45.csproj">
-      <Project>{45db1e45-4831-4e4a-bb1e-ae92eea182e3}</Project>
-      <Name>CoAP.NET45</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CoAP.Proxy\CoAP.Proxy.NET45.csproj">
       <Project>{b8d6e88e-890b-4220-b994-c5ec7b19d282}</Project>
       <Name>CoAP.Proxy.NET45</Name>

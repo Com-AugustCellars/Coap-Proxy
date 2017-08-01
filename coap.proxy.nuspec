@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Com.AugustCellars.CoAP.Proxy</id>
+        <version>1.0.0</version>
+        <title>Com.AugustCellars.CoAP.Proxy</title>
+        <authors>Schaad</authors>
+        <owners>Schaad</owners>
+        <licenseUrl>https://github.com/jimsch/CoAP-Proxy/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/jimch/CoAP-Proxy</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+          This is a C# implementation of a proxy for dealing with the CoAP and HTTP profiles.
+        </description>
+        <releaseNotes>
+Com.AugustCellars.CoAP.Proxy provides the required support to have a proxy that can deal with the folowing situations:
+   CoAP to CoAP transitions where networks would not easily route the UDP,
+   CoAP to HTTP transitions where a CoAP client wants to query an HTTP server,
+   HTTP to CoAP transitions where an HTTP client wants to query a CoAP serer.
+
+Status:
+   The middle transition is currently not well defined by standards and thus may not work well.
+   Currently caching has not been implemented and needs to be added.
+   Support for TLS on the HTTP side is absent.
+
+This project is NOT intended to be used for comercial purposes.  It is intended only for research and verification work.
+
+1.0.0
+  - Initial release to the public
+  - Change name space not to collide with the smershlink version.
+  
+Prior versions exist as part of the smershlink work
+        </releaseNotes>
+        <summary>.NET implementation of the Constrained Application Protocol (CoAP)</summary>
+        <tags>6LoWPAN CoAP HTTP proxy</tags>
+        <frameworkAssemblies>
+            <frameworkAssembly assemblyName="System" targetFramework="" />
+            <frameworkAssembly assemblyName="System.Runtime.Remoting" targetFramework="" />
+        </frameworkAssemblies>
+        <dependencies>
+          <dependency id="Com.AugustCellars.Com.CoAP" version="1.1.7" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="CoAP.Proxy\bin\Deploy\Net40\CoAP.Proxy.dll" target="lib\net40\CoAP.Proxy.dll" />
+        <file src="CoAP.Proxy\bin\Deploy\Net40\CoAP.Proxy.pdb" target="lib\net40\CoAP.Proxy.pdb" />
+        <file src="CoAP.Proxy\bin\Deploy\Net40\CoAP.Proxy.XML" target="lib\net40\CoAP.Proxy.XML" />
+        <file src="CoAP.Proxy\bin\Deploy\Net45\CoAP.Proxy.dll" target="lib\net45\CoAP.Proxy.dll" />
+        <file src="CoAP.Proxy\bin\Deploy\Net45\CoAP.Proxy.pdb" target="lib\net45\CoAP.Proxy.pdb" />
+        <file src="CoAP.Proxy\bin\Deploy\Net45\CoAP.Proxy.XML" target="lib\net45\CoAP.Proxy.XML" />
+        <file src="LICENSE" target="LICENSE" />
+    </files>
+</package>

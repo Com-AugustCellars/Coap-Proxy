@@ -23,6 +23,8 @@ nuspec.bat
 # Visual Studio not saved
 .vs
 *.snk
+*.dev.csproj
+*.dev.sln
 
 
 # NuGet Packages Directory

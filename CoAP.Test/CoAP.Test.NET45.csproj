@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -21,11 +21,9 @@
     <Optimize>false</Optimize>
     <IntermediateOutputPath>obj\Debug\NET45</IntermediateOutputPath>
     <OutputPath>bin\Debug\NET45\</OutputPath>
-    <DefineConstants Condition=" '$(VisualStudioVersion)' == '' ">TRACE;DEBUG;COAPALL</DefineConstants>
-    <DefineConstants Condition=" '$(VisualStudioVersion)' != '' ">TRACE;DEBUG;NETFX_CORE,COAPALL</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;DEBUG;COAPALL</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -76,10 +74,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CoAP-CSharp\CoAP.NET\CoAP.NET45.csproj">
-      <Project>{45db1e45-4831-4e4a-bb1e-ae92eea182e3}</Project>
-      <Name>CoAP.NET45</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CoAP.Proxy\CoAP.Proxy.NET45.csproj">
       <Project>{b8d6e88e-890b-4220-b994-c5ec7b19d282}</Project>
       <Name>CoAP.Proxy.NET45</Name>
