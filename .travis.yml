@@ -1,0 +1,22 @@
+# Travis-CI Build for dynamitey 
+# see travis-ci.org for details
+
+language: csharp
+
+env:
+  - SLN=Proxy.Net40.sln
+    TARGET=NET40
+    VERSION=Release
+  - SLN=Proxy.Net45.sln
+    TARGET=NET45
+    VERSION=Release
+#  - SLN=CoAP.NET45.sln
+#    TARGET=NET45
+#    VERSION=Debug
+
+install:
+   - curl -L -o nuget.exe https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+   - mono nuget.exe install NUnit.Runners -Version 3.5.0 -OutputDirectory testrunner
+
+script:
+  - ./build.sh
