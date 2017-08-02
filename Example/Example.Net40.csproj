@@ -44,7 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CoAP, Version=1.1.6.0, Culture=neutral, PublicKeyToken=e2c10a743037308b, processorArchitecture=MSIL">
-      <HintPath>..\packages\Com.AugustCellars.CoAP.1.1.6\lib\portable-net40+sl5+win+wpa81+wp80\CoAP.dll</HintPath>
+      <HintPath>..\packages\Com.AugustCellars.CoAP.1.1.7\lib\portable-net40+sl5+win+wpa81+wp80\CoAP.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>

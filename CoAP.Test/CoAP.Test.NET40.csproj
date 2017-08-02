@@ -47,6 +47,9 @@
     <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
       <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
     </Reference>
+    <Reference Include="CoAP, Version=1.1.6.0, Culture=neutral, PublicKeyToken=e2c10a743037308b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Com.AugustCellars.CoAP.1.1.7\lib\portable-net40+sl5+win+wpa81+wp80\CoAP.dll</HintPath>
+    </Reference>
     <Reference Include="COSE, Version=1.0.4.0, Culture=neutral, PublicKeyToken=feba232d7e8953ed">
       <HintPath>..\packages\Com.AugustCellars.COSE.1.0.5.2\lib\portable-net40+sl5+win+wpa81+wp8\COSE.dll</HintPath>
     </Reference>
@@ -71,6 +74,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoAP.Proxy\CoAP.Proxy.NET40.csproj">
+      <Project>{b8d6e88e-890b-4220-b994-c5ec7b19d282}</Project>
+      <Name>CoAP.Proxy.NET40</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

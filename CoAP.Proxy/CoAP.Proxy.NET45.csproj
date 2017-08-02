@@ -52,7 +52,7 @@
       <HintPath>..\packages\PeterO.Cbor.2.5.2\lib\portable-net45+dnxcore50+netcore45+win+wpa81+wp80\CBOR.dll</HintPath>
     </Reference>
     <Reference Include="CoAP, Version=1.1.6.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Com.AugustCellars.CoAP.1.1.6\lib\portable-net45+dnxcore50+netcore45+win+wpa81+wp80\CoAP.dll</HintPath>
+      <HintPath>..\packages\Com.AugustCellars.CoAP.1.1.7\lib\portable-net45+dnxcore50+netcore45+win+wpa81+wp80\CoAP.dll</HintPath>
     </Reference>
     <Reference Include="COSE, Version=1.0.4.0, Culture=neutral, PublicKeyToken=feba232d7e8953ed, processorArchitecture=MSIL">
       <HintPath>..\packages\Com.AugustCellars.COSE.1.0.5.2\lib\portable-net45+dnxcore50+netcore45+win+wpa81+wp8\COSE.dll</HintPath>

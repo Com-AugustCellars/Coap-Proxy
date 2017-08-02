@@ -42,9 +42,11 @@ Prior versions exist as part of the smershlink work
         </dependencies>
     </metadata>
     <files>
+      <!--
         <file src="CoAP.Proxy\bin\Deploy\Net40\CoAP.Proxy.dll" target="lib\net40\CoAP.Proxy.dll" />
         <file src="CoAP.Proxy\bin\Deploy\Net40\CoAP.Proxy.pdb" target="lib\net40\CoAP.Proxy.pdb" />
         <file src="CoAP.Proxy\bin\Deploy\Net40\CoAP.Proxy.XML" target="lib\net40\CoAP.Proxy.XML" />
+        -->
         <file src="CoAP.Proxy\bin\Deploy\Net45\CoAP.Proxy.dll" target="lib\net45\CoAP.Proxy.dll" />
         <file src="CoAP.Proxy\bin\Deploy\Net45\CoAP.Proxy.pdb" target="lib\net45\CoAP.Proxy.pdb" />
         <file src="CoAP.Proxy\bin\Deploy\Net45\CoAP.Proxy.XML" target="lib\net45\CoAP.Proxy.XML" />
